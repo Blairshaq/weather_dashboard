@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.css" />
+  <link rel="stylesheet" href="css/font-awsome" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Weather Dashboard</title>
+</head>
+
+<body>
+  <div class="jumbotron">
+    <h1 class="display-3">Weather Dashboard</h1>
+
+  </div>
+  <div class="container">
+    <!-- weather go here -->
+    <div class="row">
+      <div class="col-md-3 borderRight">
+        <table>
+          <tr>
+            <td>
+
+              <label for="cityname">Search For City</label>
+              <input type="text" value="New York" class="form-control" id="cityname" aria-describedby="emailHelp"
+                placeholder="Enter City Name">
+
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="submit" onclick="getCityLongLat()" class="btn btn-primary buttonWidth">Search</button>
+            </td>
+          </tr>
+
+        </table>
+        <table id="citynames">
+          <tbody id="citynametbdy">
+
+          </tbody>
+        </table>
+
+
+
+
+      </div>
+      <div class="col-md-9">
+        <div class="currentCityWeatherDiv">
+          <table>
+            <tr>
+              <td>
+                <h2 id="currentcityname" class="currentCityWeather"> </h2>
+              </td>
+              <td>
+                <h2 id="currentdate" class="currentCityWeather"></h2>
+              </td>
+              <td><span><img id="wicon" src="" alt="Weather icon" class="currentCityWeather"></span></td>
+            </tr>
+            <tr>
+              <td>
+                <h3 id="temp"></h3>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3 id="wind"></h3>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3 id="humidity"></h3>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3 id="uvindexlabel">UV Index:</h3>
+              </td>
+              <td>
+                <h3 id="uvindex"></h3>
+              </td>
+            </tr>
+          </table>
+
+          <table id="fivedaysfrst">
+            <tbody id="fivedaysfrsttbdy">
+
+            </tbody>
+          </table>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
