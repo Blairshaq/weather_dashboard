@@ -164,7 +164,7 @@ function getCityLongLat() {
     $.ajax({
         type: "GET",
 
-        url: "http://api.openweathermap.org/geo/1.0/direct?q=" + cityname + "&limit=1&appid=d74253fb28712ee382eea0a312fe5490",
+        url: "https://api.openweathermap.org/geo/1.0/direct?q=" + cityname + "&limit=1&appid=d74253fb28712ee382eea0a312fe5490",
 
         success: function (result, status, xhr) {
 
